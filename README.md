@@ -66,10 +66,28 @@ The frontend runs on `http://localhost:5173`.
 
 ## Deployment
 
+### Deployed URLs
+
+- Live frontend: https://scaler-persona-bot.netlify.app/
+- Backend API: https://genai-assignment-snmz.onrender.com
+- Health check: https://genai-assignment-snmz.onrender.com/api/health
+
 Production split:
 
 - Frontend: Netlify
 - Backend: Render
+
+### Render Backend
+
+- Root directory: `backend`
+- Build command: `npm install`
+- Start command: `npm start`
+
+### Netlify Frontend
+
+- Base directory: `frontend`
+- Build command: `npm run build`
+- Publish directory: `dist`
 
 Set these production environment variables:
 
@@ -81,9 +99,6 @@ For multiple frontend origins, set backend `CLIENT_ORIGINS` as a comma-separated
 ```bash
 CLIENT_ORIGINS=http://localhost:5173,https://scaler-persona-bot.netlify.app
 ```
-
-Live URL: https://scaler-persona-bot.netlify.app/
-API URL: https://genai-assignment-snmz.onrender.com
 
 ## Repository Notes
 
