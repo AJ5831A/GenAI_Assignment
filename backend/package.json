@@ -1,0 +1,19 @@
+{
+  "name": "persona-chatbot-backend",
+  "version": "1.0.0",
+  "description": "Express API for the Scaler persona chatbot assignment.",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "groq-sdk": "^1.1.2"
+  }
+}
