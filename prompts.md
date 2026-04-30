@@ -1,6 +1,6 @@
 # Persona Prompt Design
 
-This document records the prompt choices used by the backend in `backend/prompts.js`. The prompts are written as educational simulations, not claims that the real people would say these exact words.
+This document records the prompt choices used by the backend in `backend/src/personas/personaPrompts.js`. The prompts are written as educational simulations, not claims that the real people would say these exact words.
 
 ## Anshuman Singh
 

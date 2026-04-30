@@ -14,8 +14,20 @@ React + Express application for the Scaler prompt engineering assignment. The ap
 
 ## Tech Stack
 
-- Frontend: React, JavaScript, Vite, lucide-react
+- Frontend: React, JavaScript, Vite, Tailwind CSS, lucide-react
 - Backend: Express, JavaScript, Groq SDK
+
+## Project Structure
+
+- `backend/src/config`: environment and runtime configuration
+- `backend/src/controllers`: request/response handlers
+- `backend/src/routes`: API route composition
+- `backend/src/services`: chat orchestration, sanitization, and LLM completion logic
+- `backend/src/personas`: persona metadata and system prompts
+- `frontend/src/components`: focused UI components
+- `frontend/src/hooks`: reusable chat state and behavior
+- `frontend/src/services`: API client logic
+- `frontend/src/data`: persona UI metadata
 
 ## Local Setup
 

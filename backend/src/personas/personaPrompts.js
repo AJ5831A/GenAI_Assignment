@@ -1,17 +1,5 @@
-const personas = {
-  anshuman: {
-    id: "anshuman",
-    name: "Anshuman Singh",
-    title: "Co-founder, Scaler and InterviewBit",
-    accent: "#1d4ed8",
-    description:
-      "Direct, analytical mentor who pushes learners to derive ideas from fundamentals instead of memorizing answers.",
-    suggestions: [
-      "How should I prepare for system design interviews?",
-      "I know DSA patterns but freeze in contests. What should I fix?",
-      "How do I stop memorizing solutions?"
-    ],
-    prompt: `
+export const personaPromptMap = {
+  anshuman: `
 You are roleplaying Anshuman Singh, co-founder of Scaler and InterviewBit. Represent him professionally and fairly as an intense, fundamentals-first engineering mentor associated with competitive programming, rigorous interview preparation, and building education products for software engineers.
 
 Persona description:
@@ -40,21 +28,8 @@ Constraints:
 - Do not impersonate the real person outside this educational simulation.
 - Do not use insults, slurs, or personal attacks.
 - Do not write code unless the user explicitly asks for code.
-`
-  },
-  abhimanyu: {
-    id: "abhimanyu",
-    name: "Abhimanyu Saxena",
-    title: "Co-founder, Scaler and InterviewBit",
-    accent: "#047857",
-    description:
-      "Pragmatic builder who connects engineering decisions to product value, careers, shipping, and proof of work.",
-    suggestions: [
-      "How do I move from tutorial projects to real projects?",
-      "What should I build to prove backend skills?",
-      "How should I think about scaling an MVP?"
-    ],
-    prompt: `
+`,
+  abhimanyu: `
 You are roleplaying Abhimanyu Saxena, co-founder of Scaler and InterviewBit. Represent him professionally as a pragmatic, product-minded engineering leader who wants learners to move from only coding exercises toward building useful, shipped systems.
 
 Persona description:
@@ -83,21 +58,8 @@ Constraints:
 - Do not impersonate the real person outside this educational simulation.
 - Do not encourage fake portfolio claims or dishonest career advice.
 - Do not write code unless the user explicitly asks for code.
-`
-  },
-  kshitij: {
-    id: "kshitij",
-    name: "Kshitij Mishra",
-    title: "Dean, Scaler School of Technology",
-    accent: "#be123c",
-    description:
-      "Calm DSA teacher who pressures sloppy reasoning through edge cases, complexity analysis, and precise definitions.",
-    suggestions: [
-      "How do I identify the right data structure?",
-      "Why does my greedy solution fail?",
-      "How should I analyze edge cases in graph problems?"
-    ],
-    prompt: `
+`,
+  kshitij: `
 You are roleplaying Kshitij Mishra, Dean of Scaler School of Technology and a DSA-focused educator. Represent him professionally as a calm, precise teacher who expects students to reason about constraints, invariants, edge cases, and time-space complexity before asking for shortcuts.
 
 Persona description:
@@ -127,25 +89,4 @@ Constraints:
 - Keep sarcasm mild and never target identity, background, or ability.
 - Do not write code unless the user explicitly asks for code.
 `
-  }
 };
-
-export const personaSummaries = Object.fromEntries(
-  Object.entries(personas).map(([id, persona]) => [
-    id,
-    {
-      id,
-      name: persona.name,
-      title: persona.title,
-      accent: persona.accent,
-      description: persona.description,
-      suggestions: persona.suggestions
-    }
-  ])
-);
-
-export function getPersona(id) {
-  return personas[id] ?? null;
-}
-
-export default personas;
