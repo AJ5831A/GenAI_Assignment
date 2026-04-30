@@ -76,6 +76,12 @@ Set these production environment variables:
 - Backend: `GROQ_API_KEY`, `GROQ_MODEL`, `CLIENT_ORIGIN=https://scaler-persona-bot.netlify.app`
 - Frontend: `VITE_API_BASE_URL=https://genai-assignment-snmz.onrender.com`
 
+For multiple frontend origins, set backend `CLIENT_ORIGINS` as a comma-separated list, for example:
+
+```bash
+CLIENT_ORIGINS=http://localhost:5173,https://scaler-persona-bot.netlify.app
+```
+
 Live URL: https://scaler-persona-bot.netlify.app/
 API URL: https://genai-assignment-snmz.onrender.com
 
