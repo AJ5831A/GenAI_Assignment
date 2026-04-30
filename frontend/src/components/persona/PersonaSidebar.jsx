@@ -4,7 +4,7 @@ import { getAccentStyles } from "../../utils/personaStyles";
 
 export function PersonaSidebar({ activePersona, personas, onSelect }) {
   return (
-    <aside className="border-b border-white/10 bg-slate-950/95 p-5 shadow-2xl shadow-black/30 lg:min-h-screen lg:border-b-0 lg:border-r lg:p-7">
+    <aside className="shrink-0 overflow-y-auto border-b border-white/10 bg-slate-950/95 p-5 shadow-2xl shadow-black/30 lg:h-dvh lg:border-b-0 lg:border-r lg:p-7">
       <div className="flex items-center gap-3">
         <div className="grid size-11 place-items-center rounded-lg bg-white text-slate-950 shadow-lg shadow-sky-500/10">
           <Sparkles size={22} aria-hidden="true" />

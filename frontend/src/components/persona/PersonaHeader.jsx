@@ -5,7 +5,7 @@ export function PersonaHeader({ persona }) {
   const accent = getAccentStyles(persona);
 
   return (
-    <header className={`border-b border-white/10 bg-gradient-to-br ${accent.glow} px-5 py-7 lg:px-8`}>
+    <header className={`shrink-0 border-b border-white/10 bg-gradient-to-br ${accent.glow} px-5 py-5 lg:px-8 lg:py-6`}>
       <div className="flex flex-col gap-5 xl:flex-row xl:items-start xl:justify-between">
         <div>
           <p className="text-xs font-bold uppercase text-slate-400">Active persona</p>
@@ -18,7 +18,7 @@ export function PersonaHeader({ persona }) {
         </div>
       </div>
 
-      <div className="mt-6 flex max-w-4xl items-start gap-3 rounded-lg border border-white/10 bg-slate-950/40 p-4 text-slate-300 shadow-xl shadow-black/10 backdrop-blur">
+      <div className="mt-5 flex max-w-4xl items-start gap-3 rounded-lg border border-white/10 bg-slate-950/40 p-4 text-slate-300 shadow-xl shadow-black/10 backdrop-blur">
         <MessageSquareText className={accent.text} size={20} aria-hidden="true" />
         <p className="leading-6">{persona.description}</p>
       </div>

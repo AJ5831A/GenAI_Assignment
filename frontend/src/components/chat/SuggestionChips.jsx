@@ -4,7 +4,8 @@ export function SuggestionChips({ disabled, persona, onPick }) {
   const accent = getAccentStyles(persona);
 
   return (
-    <div className="flex flex-wrap gap-2 px-5 pt-5 lg:px-8" aria-label="Suggested questions">
+    <div className="shrink-0 overflow-x-auto px-5 pt-4 lg:px-8" aria-label="Suggested questions">
+      <div className="flex w-max gap-2 pb-1 lg:w-auto lg:flex-wrap">
       {persona.suggestions.map((suggestion) => (
         <button
           key={suggestion}
@@ -16,6 +17,7 @@ export function SuggestionChips({ disabled, persona, onPick }) {
           {suggestion}
         </button>
       ))}
+      </div>
     </div>
   );
 }

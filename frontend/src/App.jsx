@@ -20,7 +20,7 @@ export default function App() {
         />
       }
     >
-      <div className="flex min-h-screen flex-col">
+      <div className="flex h-full min-h-0 flex-col">
         <PersonaHeader persona={chat.activePersona} />
         <SuggestionChips
           disabled={chat.isLoading}
