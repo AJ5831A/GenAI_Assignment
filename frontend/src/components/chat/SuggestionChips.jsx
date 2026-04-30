@@ -8,7 +8,7 @@ export function SuggestionChips({ disabled, persona, onPick }) {
       {persona.suggestions.map((suggestion) => (
         <button
           key={suggestion}
-          className={`rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 ${accent.chip}`}
+          className={`rounded-full border border-white/10 bg-white/[0.06] px-4 py-2 text-sm font-medium text-slate-300 shadow-lg shadow-black/10 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 disabled:cursor-not-allowed disabled:opacity-50 ${accent.chip}`}
           type="button"
           disabled={disabled}
           onClick={() => onPick(suggestion)}

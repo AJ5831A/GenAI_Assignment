@@ -9,11 +9,13 @@ export function MessageBubble({ isLoading = false, message, persona }) {
   return (
     <article
       className={clsx(
-        "max-w-[min(820px,92%)] rounded-lg px-4 py-3 shadow-sm",
-        isUser ? `self-end text-white ${accent.bar}` : "self-start border border-slate-200 bg-white text-slate-800"
+        "max-w-[min(820px,92%)] rounded-lg px-4 py-3 shadow-xl shadow-black/15",
+        isUser
+          ? `self-end text-white ${accent.bar}`
+          : "self-start border border-white/10 bg-white/[0.08] text-slate-100 backdrop-blur"
       )}
     >
-      <span className={clsx("block text-xs font-extrabold", isUser ? "text-white/75" : "text-slate-500")}>
+      <span className={clsx("block text-xs font-extrabold", isUser ? "text-white/80" : "text-slate-400")}>
         {isUser ? "You" : persona.name}
       </span>
       <p className="mt-2 flex items-center gap-2 whitespace-pre-wrap leading-7">

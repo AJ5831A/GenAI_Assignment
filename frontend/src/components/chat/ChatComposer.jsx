@@ -10,13 +10,13 @@ export function ChatComposer({ draft, isLoading, persona, onChange, onSubmit }) 
   }
 
   return (
-    <form className="mx-5 mb-5 grid grid-cols-[1fr_52px] gap-3 rounded-lg border border-slate-200 bg-white p-3 shadow-xl lg:mx-8" onSubmit={handleSubmit}>
+    <form className="mx-5 mb-5 grid grid-cols-[1fr_52px] gap-3 rounded-lg border border-white/10 bg-slate-950/80 p-3 shadow-2xl shadow-black/35 backdrop-blur lg:mx-8" onSubmit={handleSubmit}>
       <label className="sr-only" htmlFor="chat-input">
         Message {persona.name}
       </label>
       <textarea
         id="chat-input"
-        className="min-h-13 max-h-40 resize-y bg-transparent leading-6 text-slate-900 outline-none placeholder:text-slate-400"
+        className="min-h-13 max-h-40 resize-y bg-transparent leading-6 text-slate-100 outline-none placeholder:text-slate-500"
         value={draft}
         onChange={(event) => onChange(event.target.value)}
         onKeyDown={(event) => {
@@ -29,7 +29,7 @@ export function ChatComposer({ draft, isLoading, persona, onChange, onSubmit }) 
         rows={2}
       />
       <button
-        className={`grid size-13 place-items-center rounded-lg text-white transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-45 ${accent.button}`}
+        className={`grid size-13 place-items-center rounded-lg text-white shadow-lg shadow-black/20 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950 disabled:cursor-not-allowed disabled:opacity-45 ${accent.button}`}
         type="submit"
         disabled={!draft.trim() || isLoading}
         aria-label="Send message"

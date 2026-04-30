@@ -6,7 +6,7 @@ export function ErrorBanner({ message }) {
   }
 
   return (
-    <div className="mx-5 mb-4 flex items-center gap-2 rounded-lg border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-medium text-rose-700 lg:mx-8" role="alert">
+    <div className="mx-5 mb-4 flex items-center gap-2 rounded-lg border border-rose-400/30 bg-rose-950/60 px-4 py-3 text-sm font-medium text-rose-100 shadow-lg shadow-black/20 lg:mx-8" role="alert">
       <AlertCircle size={18} aria-hidden="true" />
       {message}
     </div>

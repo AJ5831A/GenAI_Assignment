@@ -66,18 +66,18 @@ The frontend runs on `http://localhost:5173`.
 
 ## Deployment
 
-Suggested production split:
+Production split:
 
-- Frontend: Vercel or Netlify
-- Backend: Render, Railway, or Fly.io
+- Frontend: Netlify
+- Backend: Render
 
 Set these production environment variables:
 
-- Backend: `GROQ_API_KEY`, `GROQ_MODEL`, `CLIENT_ORIGIN`
-- Frontend: `VITE_API_BASE_URL`
+- Backend: `GROQ_API_KEY`, `GROQ_MODEL`, `CLIENT_ORIGIN=https://scaler-persona-bot.netlify.app`
+- Frontend: `VITE_API_BASE_URL=https://genai-assignment-snmz.onrender.com`
 
-Live URL: add deployed frontend URL here.
-API URL: add deployed backend URL here.
+Live URL: https://scaler-persona-bot.netlify.app/
+API URL: https://genai-assignment-snmz.onrender.com
 
 ## Repository Notes
 
